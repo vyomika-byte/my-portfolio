@@ -1,0 +1,71 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: radial-gradient(circle, #3C6E71 0%,#000000 100%); /* gradient background */
+    color: white;
+    padding: 0.7rem 2rem;
+    border-radius: 50px; /* pill shape */
+    margin: 1rem auto;
+    max-width: 90%;
+    font-family: 'DM Sans', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 1rem;
+    z-index: 1000;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0;
+  }
+  .navbar * {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-decoration: none;
+    color: #fff; /* set your preferred color */
+  }
+  
+  .navbar-left {
+    
+    width: 20%;
+  }
+  
+  .navbar-center {
+    display: flex;
+    gap: 95px;
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    width: 60%;
+    justify-content: center;
+    
+  }
+
+  .navbar-center li{
+    display: inline;
+  }
+  
+  /*.navbar-center a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }*/
+  
+  .navbar-center a:hover, 
+  .navbar-left a:hover, .navbar-right a:hover {
+    color: #d1d1d1;
+  }
+  .navbar-right{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    
+  }
+  
+ 
+  

@@ -1,0 +1,67 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    background: #fdf6ee;
+  }
+  
+  .footer-circle {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .circle-img {
+    width: 140%;
+    height: 140%;
+    object-fit: contain;
+  }
+  
+  .footer-text {
+    position: absolute;
+    font-family: "TanPearl", sans-serif;
+    font-size: 24px;
+    border-bottom: 1px solid #333;
+    color: #2e2e2e;
+    pointer-events: none;
+  }
+  
+  .flower {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    transform: scale(1.6);
+    }  
+  
+  .footer-circle:hover .flower {
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .flower1 {
+    top: 0px;
+    right: -10px;
+  }
+  .flower2 {
+    bottom: 10px;
+    left: -10px;
+  }
+  .flower3 {
+    bottom: 15px;
+    left: 210px;
+  }
+  .flower4 {
+    top: 50px;
+    left: -45px;
+    transform: scale(1)
+  }
+  

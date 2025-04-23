@@ -1,0 +1,37 @@
+/* Import Work Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap');
+
+/* Add Tan Pearl and Clash Display locally */
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/ClashDisplay-Medium.woff2') format('woff2');
+       
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TanPearl';
+  src: url('/fonts/tan-pearl.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Set default font for the whole app */
+
+   html, body {
+      font-family: "Work Sans", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: radial-gradient(circle, #FDF6EC 50%, #FFF3E2 80%);
+      background-attachment: fixed;
+      
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+
