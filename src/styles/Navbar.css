@@ -32,6 +32,7 @@
   .navbar-left {
     
     width: 20%;
+    cursor: pointer;
   }
   
   .navbar-center {
@@ -47,6 +48,7 @@
 
   .navbar-center li{
     display: inline;
+    cursor: pointer;
   }
   
   /*.navbar-center a {

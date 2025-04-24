@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/Footer.css';
+import { Link } from 'react-router-dom';
+
 import Circle from '../assets/circle.svg'; // Your brush stroke SVG
 import Flower1 from '../assets/flower1.svg';
 import Flower2 from '../assets/flower2.svg';
@@ -13,7 +15,7 @@ const Footer = () => {
         
             <img src={Circle} alt="Circle" className="circle-img" />
         
-        <div className="footer-text">Let's Talk</div>
+            <Link to="/contact" className="footer-text">Let's Talk</Link>
 
         {/* Flower SVGs with animation */}
         <img src={Flower1} alt="Flower1" className="flower flower1" />
