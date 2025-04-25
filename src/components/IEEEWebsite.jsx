@@ -1,11 +1,59 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import '../styles/IEEEWebsite.css';
-import ieeeThumbnail from '/images/ieee_thumbnail.png'; // adjust path if needed
+
+import designImg1 from '/images/design1.png'; 
+import designImg2 from '/images/design2.png'; 
+import designImg3 from '/images/design3.png'; 
+import ieee1 from '/images/IEEE1.png'; 
+import ieee2 from '/images/IEEE2.png'; 
+import ieee3 from '/images/IEEE3.png'; 
+import ieee4 from '/images/IEEE4.png';
+import ieee5 from '/images/IEEE5.png';
+import ieee6 from '/images/IEEE6.png'; 
 
 const IEEEWebsite = () => {
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+
+    // Duplicate images for seamless loop
+    const images = Array.from(carousel.children);
+    images.forEach((img) => {
+      const clone = img.cloneNode(true);
+      carousel.appendChild(clone);
+    });
+
+    let scrollAmount = 0;
+    const scrollStep = 1;
+
+    function autoScroll() {
+      scrollAmount += scrollStep;
+      if (scrollAmount >= carousel.scrollWidth / 2) {
+        scrollAmount = 0;
+        carousel.scrollLeft = 0;
+      } else {
+        carousel.scrollLeft = scrollAmount;
+      }
+      requestAnimationFrame(autoScroll);
+    }
+
+    autoScroll();
+  }, []);
+
+  const scrollLeft = () => {
+    const carousel = document.getElementById('carousel');
+    if (carousel) carousel.scrollBy({ left: -320, behavior: 'smooth' });
+  };
+
+  const scrollRight = () => {
+    const carousel = document.getElementById('carousel');
+    if (carousel) carousel.scrollBy({ left: 320, behavior: 'smooth' });
+  };
+
   return (
     <div className="ieee-container">
-      {/* Header Section */}
+      {/* HEADER */}
       <section className="ieee-header">
         <h1>IEEE NITJ Student Chapter Website</h1>
         <p className="ieee-role">
@@ -13,13 +61,12 @@ const IEEEWebsite = () => {
         </p>
       </section>
 
-      {/* Project Overview */}
+      {/* OVERVIEW */}
+      <h2 className="ieee-heading">Project Overview</h2>
       <section className="ieee-section">
-        <h2>Project Overview</h2>
         <p>
           The IEEE Student Chapter at NIT Jalandhar is a newly established community aimed at fostering
-          professional growth, technical excellence, and impactful contributions to society. The website serves as
-          the digital face of the chapter, designed to:
+          professional growth, technical excellence, and impactful contributions to society...
         </p>
         <ul>
           <li>Establish a strong online presence for the new chapter.</li>
@@ -28,55 +75,99 @@ const IEEEWebsite = () => {
         </ul>
       </section>
 
-      {/* Goals & Objectives */}
-      <section className="ieee-section">
-        <h2>Goals & Objectives</h2>
-        <p>To be updated soon.</p>
-      </section>
-
-      {/* Key Features */}
-      <section className="ieee-section">
-        <h2>Key Features</h2>
-        <div className="ieee-grid">
-          <div className="ieee-card"><strong>Responsive Design:</strong> Ensures optimal viewing across devices.</div>
-          <div className="ieee-card"><strong>Event & News Sections:</strong> Dynamic sections to keep members informed.</div>
-          <div className="ieee-card"><strong>Gallery:</strong> Showcases past events and activities.</div>
-          <div className="ieee-card"><strong>Committee Page:</strong> Introduces the team behind the chapter.</div>
-          <div className="ieee-card"><strong>Contact Form:</strong> Facilitates communication with interested parties.</div>
+      {/* DESIGN PROCESS */}
+      <h2 className="ieee-heading">Design Process</h2>
+      <section className="ieee-section2">
+        <div className="ieee-design-wrapper">
+          <div className="ieee-design-left">
+            <ol className="ieee-process-steps">
+              <li><strong>Research:</strong> Analyzed IEEE websites.</li>
+              <li><strong>Wireframing:</strong> Low-fidelity flows.</li>
+              <li><strong>Designs:</strong> Clean & modern aesthetic.</li>
+              <li><strong>Prototyping:</strong> Test and feedback.</li>
+              <li><strong>Development:</strong> React.js & Tailwind CSS.</li>
+            </ol>
+          </div>
+          <div className="ieee-design-carousel">
+            <img src={designImg1} alt="Design 1" />
+            <img src={designImg2} alt="Design 2" />
+            <img src={designImg3} alt="Design 3" />
+          </div>
         </div>
       </section>
 
-      {/* Challenges & Learnings */}
+      {/* FEATURES */}
+      <h2 className="ieee-heading">Key Features</h2>
       <section className="ieee-section">
-        <h2>Challenges & Learnings</h2>
-        <p><strong>Challenge:</strong> Balancing the need for a modern design with the formal branding guidelines of IEEE.</p>
-        <p><strong>Solution:</strong> Maintained IEEE’s branding elements while introducing contemporary design trends to appeal to the student demographic.</p>
-        <p><strong>Learning:</strong> Gained experience in building scalable, maintainable codebases and the importance of user-centric design.</p>
+        <div className="ieee-grid">
+          <div className="ieee-card"><strong>Responsive:</strong> Works on all devices.</div>
+          <div className="ieee-card"><strong>Dynamic Content:</strong> Events & news.</div>
+          <div className="ieee-card"><strong>Gallery:</strong> Past activities.</div>
+          <div className="ieee-card"><strong>Team:</strong> Committee page.</div>
+          <div className="ieee-card"><strong>Contact:</strong> Easy inquiries.</div>
+        </div>
+      </section>
+      {/* CHALLENGES AND LEARNINGS */}
+      <h2 className="ieee-heading">Challenges & Learnings</h2>
+      <section className="ieee-challenges">
+        <div className="ieee-challenges-wrapper">
+          <div className="ieee-challenge-box">
+            <strong>Challenge:</strong> Balancing the need for a modern design with the formal branding guidelines of IEEE.
+          </div>
+          <div className="ieee-solution-box">
+            <strong>Solution:</strong> Maintained IEEE's branding elements while introducing contemporary design trends to appeal to the student demographic.
+          </div>
+        </div>
+
+        <p className="ieee-learning">
+          <strong>Learning:</strong> Gained experience in building scalable, maintainable codebases and the importance of user-centric design.
+        </p>
       </section>
 
-      {/* Impact & Future Plans */}
+
+      {/* IMPACT */}
+      <h2 className="ieee-heading">Impact & Future Plans</h2>
       <section className="ieee-section">
-        <h2>Impact & Future Plans</h2>
-        <p><strong>Immediate Impact:</strong> Establishes a centralized platform for the chapter's activities, enhancing visibility and engagement.</p>
-        <p><strong>Future Enhancements:</strong></p>
+        <p><strong>Immediate Impact:</strong> Centralized platform.</p>
+        <p><strong>Future:</strong></p>
         <ul>
-          <li>Integration with IEEE’s global events calendar.</li>
-          <li>Member login for personalized content.</li>
-          <li>Blog section for technical articles and tutorials.</li>
+          <li>IEEE global events calendar</li>
+          <li>Member login</li>
+          <li>Blog section</li>
         </ul>
       </section>
 
-      {/* Thumbnail and Live Link */}
-      <section className="ieee-thumbnail-section">
-        <img src={ieeeThumbnail} alt="IEEE Website Thumbnail" className="ieee-thumbnail" />
-        <a
-          href="https://your-live-link.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ieee-button"
-        >
-          Live Website
-        </a>
+      {/* IMAGE CAROUSEL */}
+      <section className="ieee-photos">
+        <div className="ieee-carousel-container">
+          
+
+          <div className="ieee-design-carousel-wrapper">
+            <div className="ieee-carousel-wrapper">
+              <div className="ieee-design-carousel2" ref={carouselRef} id="carousel">
+                <img src={ieee1} alt="IEEE1" />
+                <img src={ieee2} alt="IEEE2" />
+                <img src={ieee3} alt="IEEE3" />
+                <img src={ieee4} alt="IEEE4" />
+                <img src={ieee5} alt="IEEE5" />
+                <img src={ieee6} alt="IEEE6" />
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <div className="ieee-button-wrapper">
+          <a
+            href="https://ieeenitj.vercel.app/#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ieee-button"
+          >
+            Live Website
+          </a>
+        </div>
       </section>
     </div>
   );
