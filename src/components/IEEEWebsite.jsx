@@ -100,11 +100,11 @@ const IEEEWebsite = () => {
       <h2 className="ieee-heading">Key Features</h2>
       <section className="ieee-section">
         <div className="ieee-grid">
-          <div className="ieee-card"><strong>Responsive:</strong> Works on all devices.</div>
-          <div className="ieee-card"><strong>Dynamic Content:</strong> Events & news.</div>
-          <div className="ieee-card"><strong>Gallery:</strong> Past activities.</div>
-          <div className="ieee-card"><strong>Team:</strong> Committee page.</div>
-          <div className="ieee-card"><strong>Contact:</strong> Easy inquiries.</div>
+          <div className="ieee-card"><strong>Responsive Design: </strong> Ensures optimal viewing across devices.</div>
+          <div className="ieee-card"><strong>Event & News Sections:</strong> Dynamic sections to keep members informed.</div>
+          <div className="ieee-card"><strong>Gallery:</strong> Showcases past events and activities</div>
+          <div className="ieee-card"><strong>Committee Page: </strong> Introduces the team behind the chapter.</div>
+          <div className="ieee-card"><strong>Contact Form: </strong>Facilitates communication with interested parties.</div>
         </div>
       </section>
       {/* CHALLENGES AND LEARNINGS */}
