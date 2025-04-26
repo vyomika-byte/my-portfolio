@@ -7,9 +7,9 @@ const Projects = () => {
       <div className="projects-divider"></div>
       <section className="projects-section">
         {/* Website Design Section */}
-        <div className="category">
+        <div className="category" id="website-design">
           <div className="category-content">
-            <h2 className="category-heading">Website Design</h2>
+            <h2 className="category-heading" >Website Design</h2>
             <div className="cards-row">
               <a href="/ieee-website" className="project-card">
                 <img src="/images/ieee_thumbnail.png" alt="IEEE Website" />
@@ -33,9 +33,9 @@ const Projects = () => {
         </div>
 
         {/* App Design Section */}
-        <div className="category">
+        <div className="category" id="app-design">
           <div className="category-content">
-            <h2 className="category-heading">App Design</h2>
+            <h2 className="category-heading" >App Design</h2>
             <div className="cards-row">
               <a href="/zindagi-go" className="project-card">
                 <img src="/images/zindagigo_thumbnail.png" alt="Zindagi Go - App" />
@@ -51,9 +51,9 @@ const Projects = () => {
         </div>
 
         {/* Graphic Design Section */}
-        <div className="category">
+        <div className="category" id="graphic-design">
           <div className="category-content">
-            <h2 className="category-heading">Graphic Design</h2>
+            <h2 className="category-heading" >Graphic Design</h2>
 
             {/* Posters & Banners */}
             <div className="design-category">

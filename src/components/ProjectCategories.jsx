@@ -2,10 +2,17 @@ import React, { useState } from 'react';
 import '../styles/ProjectCategories.css';
 
 const categories = [
-  { name: "Website Design", link: "#website-projects" },
-  { name: "App Design", link: "#app-projects" },
-  { name: "Graphic Design", link: "#graphic-projects" },
+  { name: "Website Design", link: "website-design" },
+  { name: "App Design", link: "app-design" },
+  { name: "Graphic Design", link: "graphic-design" },
 ];
+
+const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 const ProjectCategories = () => {
   const [hovered, setHovered] = useState(null);
@@ -20,6 +27,7 @@ const ProjectCategories = () => {
             className="category-block"
             onMouseEnter={() => setHovered(index)}
             onMouseLeave={() => setHovered(null)}
+            onClick={()=>scrollToSection(category.link)}
           >
             <h2 className="category-title">{category.name}</h2>
             {hovered === index && (
@@ -27,9 +35,9 @@ const ProjectCategories = () => {
                 {Array(20)
                   .fill()
                   .map((_, i) => (
-                    <a href={category.link} key={i}>
-                      | View Designs |
-                    </a>
+                    <a href="#" key={i}>
+                    | View Designs |
+                  </a>
                   ))}
               </div>
             )}
