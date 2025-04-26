@@ -8,12 +8,11 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import IEEEWebsite from './components/IEEEWebsite';
-
+import ZindagiGo from './components/ZindagiGo';
 // Placeholder pages
 
 const HacknitiWebsite = () => <div>Hackniti Website Details Coming Soon!</div>;
 const GDSCWebsite = () => <div>GDSC Website Details Coming Soon!</div>;
-const ZindagiGoApp = () => <div>Zindagi Go App Details Coming Soon!</div>;
 
 function App() {
   return (
@@ -26,7 +25,8 @@ function App() {
         <Route path="/ieee-website" element={<IEEEWebsite />} />
         <Route path="/hackniti" element={<HacknitiWebsite />} />
         <Route path="/gdsc-nitj" element={<GDSCWebsite />} />
-        <Route path="/zindagi-go" element={<ZindagiGoApp />} />
+        <Route path="/zindagi-go" element={<ZindagiGo />} />
+
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
