@@ -70,8 +70,8 @@
     margin-top: -1rem;
     width: 1304px;
     max-width: 90%;
-    height: 4000px;
-    aspect-ratio: 652 / 783;
+    height: auto;
+    /* aspect-ratio: 652 / 783; */
     background: #f5f3ff;
     border-radius: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -453,6 +453,17 @@
   margin-bottom: 10px;
 }
 
+.card-list {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  list-style-type: disc ;
+  color: #000;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+}
+
 .card-text {
   color: #000;
   font-family: "Work Sans", sans-serif;
@@ -511,120 +522,131 @@
   .card-content {
     width: 60%;
   }
-   
+}
 
-  /* process section start*/
-  .process-highlights-container {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+.process-highlights-container {
+  max-width: 1200px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.process-title {
+  text-align: left;
+  font-family: "Work Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: -5px;
+}
+
+.process-wrapper {
+  display: flex;
+  align-items: flex-start; /* 👈 Timeline stays at its own height */
+  gap: 30px;
+  padding: 2rem;
+}
+
+/* Timeline LEFT */
+.timeline-column {
+  flex: 0 0 auto; /* 👈 Prevents expanding */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
   
-  .process-title {
-    width: 293px;
-    height: 49px;
-    color: #333;
-    font-family: "Work Sans", sans-serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 32px;
-  }
+}
+
+.timeline-svg {
+  width: 50px;
+  height: auto;
+}
+
+/* Steps RIGHT */
+.steps-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* 👈 Evenly distributes steps */
+}
+
+.step-block {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0;
+}
+
+.step-block p {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.4;
+}
   
-  .process-steps {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    align-items: flex-start;
-    margin-bottom: 60px;
-  }
   
-  .timeline-svg {
-    width: 80px;
-    min-width: 60px;
-    object-fit: contain;
-  }
+
+.final-thoughts {
+  margin-bottom: 60px;
+  padding-left: 3rem;
+}
+
+.final-thoughts-title {
+  width: 293px;
+  color: #333;
+  font-family: "Work Sans", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.final-thoughts-body {
+  max-width: 95%;
+  color: #333;
+  font-family: "Work Sans", sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.links-section {
+  margin-top: -15px;
+  margin-bottom: 40px;
+  padding-left: 3rem;
+}
+
+.links-title {
+  font-family: "Work Sans", sans-serif;
+  color: #333;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.links-section ul {
+  list-style: disc;
+  padding-left: 4rem;
+}
+
+.links-section li {
+  margin-bottom: 8px;
+}
+
+.links-section a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.links-section a:hover {
+  text-decoration: underline;
+}
   
-  .steps-text {
-    width: 854px;
-    max-width: 100%;
-  }
-  
-  .steps-text p {
-    color: #333;
-    font-family: "Work Sans", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 16px;
-  }
-  
-  .steps-text p strong {
-    font-weight: 700;
-  }
-  
-  .final-thoughts {
-    margin-bottom: 60px;
-  }
-  
-  .final-thoughts-title {
-    width: 293px;
-    color: #333;
-    font-family: "Work Sans", sans-serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 20px;
-  }
-  
-  .final-thoughts-body {
-    width: 800px;
-    max-width: 80%;
-    color: #333;
-    font-family: "Work Sans", sans-serif;
-    font-size: 32px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-  }
-  
-  .links-section {
-    margin-top: 40px;
-  }
-  
-  .links-title {
-    font-family: "Work Sans", sans-serif;
-    color: #333;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 12px;
-  }
-  
-  .links-section ul {
-    list-style: disc;
-    padding-left: 20px;
-  }
-  
-  .links-section li {
-    margin-bottom: 8px;
-  }
-  
-  .links-section a {
-    color: #000;
-    text-decoration: none;
-    font-family: "Work Sans", sans-serif;
-    font-size: 20px;
-  }
-  
-  .links-section a:hover {
-    text-decoration: underline;
-  }
   
   /* Responsive Design */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .process-steps {
       flex-direction: column;
       align-items: flex-start;
@@ -642,7 +664,7 @@
     .final-thoughts-title, .process-title {
       font-size: 28px;
     }
-  }
+  } */
   
   @media (max-width: 480px) {
     .process-title,
@@ -706,4 +728,3 @@
       text-align: center;
     }
   }
-}

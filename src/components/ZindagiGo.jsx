@@ -168,6 +168,8 @@ const ZindagiGo = () => {
         </div>
 
         {/* ✅ Visual Identity Section */}
+        <div className="visual-identity-section">
+
         <h2 className="visual-identity-title">Visual Identity for Zindagi Go</h2>
         <div className="visual-identity-container">
           
@@ -195,7 +197,7 @@ const ZindagiGo = () => {
                 <strong>Contrast:</strong> Strong contrast between text and background ensures that content remains highly legible, even for users with visual impairments.
               </p>
               <div className="color-palette">
-                <h3 classname ="subtitle-color">Hex Codes Used:</h3>
+                <h3 className ="subtitle-color">Hex Codes Used:</h3>
                 <ul>
                   <li>
                     <strong>Primary Palette:</strong> #594087, #A176C8, #C6AEE0
@@ -221,8 +223,8 @@ const ZindagiGo = () => {
               <p className="card-text">
                 <strong>Style:</strong> Line-based, minimalistic; icons use consistent stroke width and rounded edges for a friendly, easy, accessible feel.<br /><br />
                 <strong>Visual Clarity:</strong> Designed with simplicity in mind to minimize cognitive load for senior users, ensuring fast recognition.<br /><br />
-                <strong>Categories Covered:</strong> 
-                <ul>
+                <strong>Categories Covered:</strong> </p>
+                <ul className="card-list">
                   <li>
                     <strong>Navigation:</strong> Home, Search, Settings, Back, Forward
                   </li>
@@ -239,6 +241,7 @@ const ZindagiGo = () => {
                     <strong>Finance Management:</strong> Wallet, Transactions, Bills
                   </li>
                   </ul>
+                <p className="card-text">
                 <strong>Touch-Friendly:</strong> Icons optimized for touch screens with a minimum size of 44x44px to accommodate users with motor difficulties.<br /><br />
                 <strong>Consistency:</strong>  All icons follow a uniform visual language to maintain harmony across the interface.
               </p>
@@ -246,21 +249,34 @@ const ZindagiGo = () => {
             <img src="/images/icons.svg" alt="Iconography" className="card-svg-3" />
           </div>
         </div>
-        <div className="process-highlights-container">
-      <h2 className="process-title">Process Highlights</h2>
-
-      <div className="process-steps">
-        <img src="/images/timeline.svg" alt="Timeline" className="timeline-svg" />
-
-        <div className="steps-text">
-          <p><strong>User Research:</strong> Interviews with elderly users and caregivers helped identify needs and pain points.</p>
-          <p><strong>Wireframing:</strong> Focused on single-task screens — one action per screen whenever possible.</p>
-          <p><strong>Prototyping and Testing:</strong> Conducted usability sessions to fine-tune button sizing, tap targets, and navigation clarity.</p>
-          <p><strong>Iteration:</strong> Based on feedback, minimized jargon, added optional voice instructions, and adjusted color contrast ratios.</p>
         </div>
-      </div>
 
-      <div className="final-thoughts">
+        <div className="process-highlights-container">
+          <h2 className="process-title">Process Highlights</h2>
+
+          <div className="process-wrapper">
+            <div className="timeline-column">
+              <img src="/images/timeline.svg" alt="Timeline" className="timeline-svg" />
+            </div>
+
+            <div className="steps-column">
+              <div className="step-block">
+                <p><strong>User Research:</strong> Interviews with elderly users and caregivers helped identify needs and pain points.</p>
+              </div>
+              <div className="step-block">
+                <p><strong>Wireframing:</strong> Focused on single-task screens — one action per screen whenever possible.</p>
+              </div>
+              <div className="step-block">
+                <p><strong>Prototyping and Testing:</strong> Conducted usability sessions to fine-tune button sizing, tap targets, and navigation clarity.</p>
+              </div>
+              <div className="step-block">
+                <p><strong>Iteration:</strong> Based on feedback, minimized jargon, added optional voice instructions, and adjusted color contrast ratios.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="final-thoughts">
         <h2 className="final-thoughts-title">Final Thoughts</h2>
         <p className="final-thoughts-body">
           Designing for the elderly taught me that true usability is invisible — it's about removing barriers, not adding features.
@@ -275,9 +291,11 @@ const ZindagiGo = () => {
           <li><a href="https://www.youtube.com/watch?v=x6FV2Lsp5w0&t=17s" target="_blank" rel="noopener noreferrer"><strong>Youtube video</strong></a></li>
         </ul>
       </div>
-    </div>
+
 
       </div> {/* End of page-background */}
+
+
       
     </div>
   );
