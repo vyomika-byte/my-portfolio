@@ -168,6 +168,75 @@
   }
 
   .problem-solution-section {
+    background: #f5f3ff;
+    padding-top: 6rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .problem-box, .solution-box {
+    background: transparent;
+    padding: 2rem;
+    width: 500px;
+    max-width: 90%;
+  }
+  
+  .heading-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heading-with-icon h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .problem-box p, .solution-box p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .solution-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+  
+  .solution-list li {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  
+  .bullet-icon {
+    color: black;
+    font-size: 1.6rem;
+  }
+  
+/* 
+  .problem-solution-section {
     margin-top: 5rem;
     display: flex;
     justify-content: center;
@@ -177,7 +246,19 @@
     animation: fadeUp 1s ease-in-out;
   }
   
-  .problem-box, .solution-box {
+  .problem-box {
+    
+    border-radius: 20px;
+    
+    padding: 2rem;
+    padding-top: 0%;
+    width: 500px;
+    max-width: 80%;
+    color: #333;
+    font-family: "Work Sans", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .solution-box {
     
     border-radius: 20px;
     
@@ -188,30 +269,44 @@
     font-family: "Work Sans", sans-serif;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  .arrow img {
-    width: 175px; /* or however big you want */
-    height: auto;
-    margin-left: -1.5rem;
+    */
+
+    .arrow-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center; /* ✅ This centers only the arrow vertically */
+    }
+    
+  .arrow-icon {
+    width: 150px; /* or however big you want */
+    margin-left: -2.5rem;
   }
   
   /* Hover Glow Effect 
   .problem-box:hover, .solution-box:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 20px rgba(229, 219, 255, 0.8);
-  }*/
+  } */
   
-  .problem-box h2, .solution-box h2 {
+  /* .problem-box h2 {
     font-size: 34px;
     font-weight: 700;
     margin-bottom: 1rem;
     font-family: "work sans";
   }
-  
-  .problem-box p, .solution-box p {
+  .solution-box h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+    font-family: "work sans";
+  }
+  */
+  .problem-box p {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4;
-  }
+  }  
 
   .key-features-section {
     width: 100%;

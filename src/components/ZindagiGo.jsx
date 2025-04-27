@@ -52,25 +52,31 @@ const ZindagiGo = () => {
 
         <div className="problem-solution-section">
           <div className="problem-box">
-            <h2>Problem</h2>
+          <div className="heading-with-icon">
+      <img src="/images/sentiment_sad.svg" alt="Problem Icon" className="icon" />
+      <h2>Problem</h2>
+    </div>
             <p>
               Older adults often face technological barriers that limit their independence. Complex interfaces, overwhelming options, and a lack of personalization make many apps difficult to use. They need simple, trustworthy, emotionally intelligent tools that respect their autonomy without making them feel dependent.
             </p>
           </div>
 
-          <div className="arrow">
-            <img src="/images/arrow.svg" alt="Arrow" />
-          </div>
+          <div className="arrow-wrapper">
+    <img src="/images/arrow.svg" alt="Arrow" className="arrow-icon" />
+  </div>
 
           <div className="solution-box">
-            <h2>Solution</h2>
-            <h3>Zindagi Go was built to be:</h3>
-            <p>
-              Simple, with a highly readable layout and minimal cognitive load.
-              Empowering, giving users control over their health, activities, and safety.
-              Emotionally intelligent, fostering confidence, connection, and independence.
-              Secure, with sensitive features (like banking) designed with privacy-first thinking.
-            </p>
+          <div className="heading-with-icon">
+      <img src="/images/favorite1.svg" alt="Solution Icon" className="icon" />
+      <h2>Solution</h2>
+    </div>
+    <p><strong>Zindagi Go was built to be:</strong></p>
+    <ul className="solution-list">
+      <li><span className="bullet-icon"><img src="/images/favorite.svg" alt="Solution Icon" className="icon2" /></span> Simple, with a highly readable layout and minimal cognitive load.</li>
+      <li><span className="bullet-icon"><img src="/images/favorite.svg" alt="Solution Icon" className="icon2" /></span> Empowering, giving users control over their health, activities, and safety.</li>
+      <li><span className="bullet-icon"><img src="/images/favorite.svg" alt="Solution Icon" className="icon2" /></span> Emotionally intelligent, fostering confidence, connection, and independence.</li>
+      <li><span className="bullet-icon"><img src="/images/favorite.svg" alt="Solution Icon" className="icon2" /></span> Secure, with sensitive features (like banking) designed with privacy-first thinking.</li>
+    </ul>
           </div>
         </div>
 
