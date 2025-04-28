@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/ZindagiGo.css";
 import HeroImage from "/images/zindagigo1.png";
-import ProjectGallery from "./ProjectGallery.jsx";
+import ProjectGallery from "./Projectgallery.jsx";
 
 import heart from "/images/heart.png"; 
 
