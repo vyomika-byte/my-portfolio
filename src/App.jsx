@@ -26,7 +26,6 @@ function App() {
         <Route path="/hackniti" element={<HacknitiWebsite />} />
         <Route path="/gdsc-nitj" element={<GDSCWebsite />} />
         <Route path="/zindagi-go" element={<ZindagiGo />} />
-
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
