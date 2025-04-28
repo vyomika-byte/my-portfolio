@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/ZindagiGo.css";
-import HeroImage from "/images/zindagigo1.png"; 
+import HeroImage from "/images/zindagigo1.png";
+import ProjectGallery from "../components/ProjectGallery";
+
 import heart from "/images/heart.png"; 
 
 const stepsData = [
@@ -275,6 +277,7 @@ const ZindagiGo = () => {
             </div>
           </div>
         </div>
+        <ProjectGallery />
 
         <div className="final-thoughts">
         <h2 className="final-thoughts-title">Final Thoughts</h2>

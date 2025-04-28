@@ -79,7 +79,7 @@
 }
 
 .project-card img {
-  width: 90%;
+  width: 80%;
   height: auto;
   max-height: 180px;
   border-radius: 8px;
@@ -126,12 +126,10 @@
 }
 
 .design-card {
-  display: flex;
-  width: 284px;
-  min-width: 244px;
+  flex: 0 0 calc(33.333% - 1rem); /* 3 cards visible */
   height: 289px;
-  padding: 10px;
-  padding: 12px 51px 39px 51px;
+  padding: 12px 20px 20px 20px; /* adjust padding to fit better */
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
@@ -152,7 +150,7 @@
 
 .design-card img {
   width: 100%;
-  max-height: 180px;
+  max-height: 200px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -162,6 +160,7 @@
   font-size: 16px;
   text-align: center;
   color: #000;
+  margin-top: 8px;
 }
 .design-category {
   margin-bottom: 40px;
@@ -172,15 +171,20 @@
 
 .design-row {
   display: flex;
-  gap: 16px;
   overflow-x: auto;
-  padding-bottom: 10px;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
+  gap: 1rem; /* spacing between cards */
+  padding: 1rem 0;
+  scroll-behavior: smooth; /* smooth scrolling */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+  scroll-snap-align: start;
 
+
+}
 .design-row::-webkit-scrollbar {
-  height: 6px;
+  display: none;
 }
 
 .design-row::-webkit-scrollbar-thumb {

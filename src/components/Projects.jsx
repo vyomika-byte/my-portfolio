@@ -38,8 +38,8 @@ const Projects = () => {
             <h2 className="category-heading" >App Design</h2>
             <div className="cards-row">
               <a href="/zindagi-go" className="project-card">
-                <img src="/images/zindagigo_thumbnail.png" alt="Zindagi Go - App" />
-                <p>Zindagi Go - App For elderly</p>
+                <img src="/images/ZG1.png" alt="Zindagi Go - App" />
+                <p>Zindagi Go - App For elderly<br></br> (GSC Project)</p>
               </a>
             </div>
           </div>
@@ -71,18 +71,49 @@ const Projects = () => {
               <h3 className="design-title">Social Media Creatives</h3>
               <div className="design-row">
                 <div className="design-card">
-                  <img src="/assets/social1.jpg" alt="Post: xyz" />
-                  <p>Post: xyz</p>
+                  <a href="/images/post1.png" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/post1.png" alt="Post: xyz" />
+                  </a>
+                  <p>GDGC session Post<br /> (Solo project)</p>
                 </div>
+
+                <div className="design-card">
+                  <a href="/images/post2.png" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/post2.png" alt="Post: xyz" />
+                  </a>
+                  <p>GSC info session Post<br /> (Team project)</p>
+                  </div>
+
+                  <div className="design-card">
+                  <a href="/images/post3.png" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/post3.png" alt="Post: xyz" />
+                  </a>
+                  <p> Meet the team-grid cover<br /> (Team project)</p>
+                  </div>
+
+                  <div className="design-card">
+                  <a href="/images/post4.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/post4.jpg" alt="Post: xyz" />
+                  </a>
+                  <p> Hackmol Promotion post<br /> (solo Project)</p>
+                  </div>
+
+                  <div className="design-card">
+                  <a href="/images/post5.png" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/post5.png" alt="Post: xyz" />
+                  </a>
+                  <p> Intro post- Grid Cover<br /> (Self Learning)</p>
+                  </div>
               </div>
             </div>
+
 
             {/* Event Branding */}
             <div className="design-category">
               <h3 className="design-title">Event Branding</h3>
               <div className="design-row">
                 <div className="design-card">
-                  <img src="/assets/event1.jpg" alt="E2ACON" />
+                  <img src="/images/e2a1.png" alt="E2ACON" />
                   <p>E2ACON</p>
                 </div>
               </div>

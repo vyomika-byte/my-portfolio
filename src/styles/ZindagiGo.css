@@ -528,6 +528,8 @@
   max-width: 1200px;
   padding-left: 3rem;
   padding-right: 3rem;
+  margin-top: 1rem;
+  
 }
 
 .process-title {
@@ -570,7 +572,7 @@
 .step-block {
   display: flex;
   flex-direction: column;
-  padding: 0.6rem 0;
+  padding: 0.5rem 0;
 }
 
 .step-block p {
@@ -604,7 +606,7 @@
   max-width: 95%;
   color: #333;
   font-family: "Work Sans", sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
@@ -634,7 +636,7 @@
 }
 
 .links-section a {
-  color: #000;
+  color: #333;
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
   font-size: 20px;

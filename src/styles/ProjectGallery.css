@@ -1,0 +1,69 @@
+.project-gallery-wrapper {
+    padding: 40px 20px;
+  }
+  
+  .gallery-heading {
+    text-align: left; /* Align heading towards left */
+    color: #333;
+    font-family: "Work Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-left: 30px; /* Move slightly towards left */
+    margin-top: 3rem;
+  }
+  
+  .project-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .carousel-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .carousel {
+    width: 180px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #ddd;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* Navigation Buttons */
+  .nav-button {
+    background: linear-gradient(135deg, #6a5acd, #5c4d9d);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .nav-button:hover {
+    background: #ffffff; /* Background becomes white */
+    color: #6a5acd; /* Symbol becomes purple */
+    transform: scale(1.1);
+    border: 2px solid #5c4d9d; /* Add border */
+  }
+  
