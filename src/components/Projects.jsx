@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Projects.css";
+import { Link } from "react-router-dom";
+
 
 const Projects = () => {
   return (
@@ -112,10 +114,12 @@ const Projects = () => {
             <div className="design-category">
               <h3 className="design-title">Event Branding</h3>
               <div className="design-row">
-                <div className="design-card">
-                  <img src="/images/e2a1.png" alt="E2ACON" />
-                  <p>E2ACON</p>
-                </div>
+                
+                  <Link to="/E2ACON" className="design-card">
+                    <img src="/images/e2a1.png" alt="E2ACON" />
+                    <p>E2ACON</p>
+                  </Link>
+                
               </div>
             </div>
           </div>

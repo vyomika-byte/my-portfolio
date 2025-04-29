@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import IEEEWebsite from './components/IEEEWebsite';
 import ZindagiGo from './components/ZindagiGo';
+import E2ACON from './components/E2ACON';
 // Placeholder pages
 
 const HacknitiWebsite = () => <div>Hackniti Website Details Coming Soon!</div>;
@@ -26,7 +27,7 @@ function App() {
         <Route path="/hackniti" element={<HacknitiWebsite />} />
         <Route path="/gdsc-nitj" element={<GDSCWebsite />} />
         <Route path="/zindagi-go" element={<ZindagiGo />} />
-
+        <Route path="/e2acon" element={<E2ACON />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

@@ -1,0 +1,451 @@
+.e2acon-container {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .e2acon-box {
+    border-radius: 15px;
+    border: 1px solid #044EFB;
+    background: #D9ECFB;
+    width: 100%;
+    max-width: 1200px;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+  
+  /* HERO FLEX */
+  .e2acon-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .e2acon-text-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* INLINE HEADING */
+  .e2acon-inline-heading {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+  
+  .e2acon-black {
+    text-align: right;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Anton', sans-serif;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* simpler */
+    letter-spacing: 10.5px;
+    margin: 0; /* reset */
+}
+
+.e2acon-blue {
+    text-align: right; /* added */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    background: linear-gradient(180deg, #000 53.37%, #1A7EE1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0; /* reset */
+    transform: translateY(-10px); /* added */
+    
+}
+  
+  .e2acon-tagline {
+    font-size: 42px;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 32px;
+    color: #000;
+  }
+  
+  /* LOGO */
+  .e2acon-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 8px;
+    margin :0;
+    padding: 0;
+    transform: translate(-40px, -30px)
+  }
+
+
+  /* HERO IMAGE */
+.e2acon-image-wrapper {
+    margin: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 3rem;
+  }
+  
+  .e2acon-hero-image {
+    width: 100%;
+    height: 130vh;
+    object-fit: contain;
+    display: block;
+    border-radius: 2px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .e2acon-hero-image {
+      height: 60vh;
+    }
+  }
+  
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .e2acon-inline-heading {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .e2acon-black,
+    .e2acon-blue {
+      font-size: 40px;
+    }
+  
+    .e2acon-logo {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .e2acon-tagline {
+      font-size: 16px;
+    }
+  }
+  .project-overview {
+    margin-top: 2rem;
+    padding: 2rem;
+    
+    border-radius: 12px;
+  }
+  
+  .project-title {
+    font-size: 32px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+
+  }
+  
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: start;
+    margin-top: 1.5rem;
+  }
+  
+  .box {
+    
+    padding: 0;
+    border-radius: 5px;
+    
+    font-size: 1rem;
+    line-height: 1.6;
+    
+  }
+  .box1{
+    flex: 0 0 10%;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Work Sans", sans-serif;
+    color: #333;
+    line-height: 2.5rem;
+    transform: translateY(-2px);
+  }
+  .box2{
+    flex: 0 0 45%;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif; 
+    color: #333;
+
+  }
+  .box3{
+    flex: 1;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    margin-left: -3rem;
+    padding: 0%;
+  }
+  
+  .overview-description {
+    margin-top: 2rem;
+    font-size: 22px;
+    line-height: normal;
+    font-weight:400;
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+  }
+  
+  .material-list {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+  }
+  
+  .material-list li {
+    margin-bottom: 0.5rem;
+  }
+
+
+  /* masonary grid*/
+  .masonry-grid {
+    column-count: 3; /* 3 columns */
+    column-gap: 0.6rem;
+    margin-top: 2rem;
+  }
+
+  
+  .masonry-grid img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    break-inside: avoid; /* important to prevent weird breaks */
+  }
+  
+  /* Specific sizing */
+  .horizontal {
+    aspect-ratio: 3 / 2; /* wide banners */
+  }
+  
+  .vertical {
+    aspect-ratio: 1.2 / 6; /* tall vertical banner */
+  }
+  
+  .small-rect {
+    aspect-ratio: 2 / 1; /*  food coupon */
+  }
+  .small-tall{
+    aspect-ratio: 1 / 1.3; /* slip pad  */
+  }
+  
+  .medium-rect {
+    aspect-ratio: 1 / 1.4; /* book cover */
+  }
+  
+  .tall-standee {
+    aspect-ratio: 1 / 2.5; /* standee */
+  }
+  
+/* the design details start her*/
+.design-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  font-family: "Work Sans", sans-serif;
+  color: #000;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.subheading {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.body-text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.color-palette {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.palette-image {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  padding: 0%;
+  margin-left: 1.5rem;
+  transform: translateX(1.5rem);
+  
+}
+
+.typography {
+  margin-top: 24px;
+}
+
+.challenges-learnings {
+  margin-top: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  color: #333;
+}
+
+.section-heading{
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+
+.subheading {
+  font-size: 22px;
+  margin-bottom: none;
+  padding-bottom: 0;
+  
+}
+
+.body-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.challenge-item {
+  margin-bottom: 24px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .design-details-wrapper {
+    padding: 20px;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .subheading {
+    font-size: 22px;
+  }
+
+  .body-text {
+    font-size: 16px;
+  }
+
+  .palette-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/*d- day gallery*/
+.gallery-wrapper {
+  padding: 20px;
+  font-family: "Work Sans", sans-serif;
+  
+}
+
+.section-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* Outer frame */
+.carousel-container {
+  width: 960px; /* 👈 3 * 320px */
+  margin: 0 auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Moving track */
+.carousel-track {
+  display: flex;
+  gap: 20px;
+}
+
+/* Items */
+.carousel-item {
+  flex: 0 0 340px; /* 👈 fixed width */
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover lift */
+.carousel-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .carousel-container {
+    width: 720px;
+  }
+  .carousel-item {
+    flex: 0 0 220px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 90%;
+  }
+  .carousel-item {
+    flex: 0 0 70%;
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    width: 100%;
+  }
+  .carousel-item {
+    flex: 0 0 90%;
+  }
+}
+.e2acon-quote {
+  color: #333;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 40px; /* 👈 some breathing space from gallery */
+  padding: 0 20px; /* 👈 to prevent text touching edges on small screens */
+}
