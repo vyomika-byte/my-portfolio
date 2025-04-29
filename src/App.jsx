@@ -27,7 +27,9 @@ function App() {
         <Route path="/hackniti" element={<HacknitiWebsite />} />
         <Route path="/gdsc-nitj" element={<GDSCWebsite />} />
         <Route path="/zindagi-go" element={<ZindagiGo />} />
+
         <Route path="/e2acon" element={<E2ACON />} />
+
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
