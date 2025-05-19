@@ -58,7 +58,7 @@ const Projects = () => {
             <h2 className="category-heading" >Graphic Design</h2>
 
             {/* Posters & Banners */}
-            <div className="design-category">
+            {/*<div className="design-category">
               <h3 className="design-title">Posters & Banners</h3>
               <div className="design-row">
                 <div className="design-card">
@@ -66,7 +66,7 @@ const Projects = () => {
                   <p>Banner: xyz</p>
                 </div>
               </div>
-            </div>
+            </div>*/}
 
             {/* Social Media Creatives */}
             <div className="design-category">

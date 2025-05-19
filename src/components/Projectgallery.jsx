@@ -5,17 +5,17 @@ const images = [
   "/images/app1.png",
   "/images/app2.png",
   "/images/app3.png",
-  "/images/app4.png", // You can add more images if needed
+  "/images/app4.png",
   "/images/app5.png",
-    "/images/app6.png", 
-    "/images/app7.png",
-    "/images/app8.png",
-    "/images/app9.png",
-    "/images/app10.png",
-    "/images/app11.png",
-    "/images/app12.png",
-    "/images/app13.png",
-    "/images/app14.png",
+  "/images/app6.png", 
+  "/images/app7.png",
+  "/images/app8.png",
+  "/images/app9.png",
+  "/images/app10.png",
+  "/images/app11.png",
+  "/images/app12.png",
+  "/images/app13.png",
+  "/images/app14.png",
 ];
 
 const ProjectGallery = () => {
@@ -43,9 +43,9 @@ const ProjectGallery = () => {
 
   return (
     <div className="project-gallery-wrapper">
-      <h2 className="gallery-heading">Project Gallery</h2> {/* Heading OUTSIDE carousel */}
+      <h2 className="gallery-heading">Project Gallery</h2>
       
-      <div className="project-gallery">
+      <div className="carousel-wrapper">
         <button className="nav-button left" onClick={handlePrev}>‹</button>
         
         <div className="carousel-container">
